@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script task</title>
+</head>
+<body>
+   <script>
+    const students = [
+  { name: 'Aarav', marks: 78, passed: true, subject: 'Math' },
+  { name: 'Diya', marks: 42, passed: false, subject: 'Science' },
+  { name: 'Kabir', marks: 88, passed: true, subject: 'Math' },
+  { name: 'Meera', marks: 65, passed: true, subject: 'English' },
+  { name: 'Rohan', marks: 38, passed: false, subject: 'Science' },
+  { name: 'Isha', marks: 92, passed: true, subject: 'Math' },
+  { name: 'Vivaan', marks: 75, passed: true, subject: 'English' },
+  { name: 'Anaya', marks: 70, passed: true, subject: 'Science' }
+]
+const filteredStudents = students.filter(student => student.passed && student.marks >= 70);
+const totalMarks = filteredStudents.reduce((sum, student) => sum + student.marks, 0);
+ if (!currentTop || student.marks > currentTop.marks) {
+    toppers[student.subject] = student;
+  }
+  return toppers;
+console.log("Filtered Students:", filteredStudents);
+console.log("Total Marks:", totalMarks);
+console.log("Subject Toppers:", Object.values(subjectToppers));
+   </script> 
+    
+</body>
+</html>

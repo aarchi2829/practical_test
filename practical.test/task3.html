@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive web page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    line-height:1.6;
+}
+
+header{
+
+    padding:15px 30px;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 10%;
+    gap:40px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    margin-bottom:20px;
+}
+
+.hero-content button{
+    padding:12px 24px;
+    border-radius:5px;
+}
+footer{
+    text-align: center;
+    padding:20px;
+}
+
+footer a{
+    margin:0 10px;
+}
+
+
+@media (max-width:600px){
+
+    .menu-toggle{
+        display:block;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Clevision</div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Building the Future of Web</h1>
+
+        <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iste amet illum commodi nulla minima vero harum explicabo temporibus provident necessitatibus, neque modi nobis! Et assumenda at asperiores, voluptatibus voluptatem, sed molestiae eligendi mollitia illo, expedita obcaecati! Voluptates, ad numquam.
+        </p>
+
+        <button>Get Started</button>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://placehold.co/600x400" alt="Hero Image">
+    </div>
+</section>
+
+<footer>
+    <h3>Clevision</h3>
+
+    <p>Email: info@clevision.com</p>
+    <p>Phone: +91 9999999999</p>
+
+    <div>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+    </div>
+
+    <p>&copy; 2026 Clevision Technologies</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
